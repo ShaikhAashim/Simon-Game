@@ -23,7 +23,7 @@ A modern, responsive implementation of the classic Simon Says memory game built 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/simon-game.git
+https://github.com/ShaikhAashim/Simon-Game.git
 ```
 
 2. Open `index.html` in your browser
