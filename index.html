@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-start align-items-center min-vh-100 py-4">
+        <div class="game-container">
+            <h1 class="text-center mb-4 game-title">Simon Says</h1>
+            
+            <!-- Score Display -->
+            <div class="score-section text-center mb-4">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="score-label">Current Score</h5>
+                        <span id="current-score" class="score-display">0</span>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="score-label">High Score</h5>
+                        <span id="high-score" class="score-display">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Status -->
+            <div class="text-center mb-4">
+                <h3 id="game-status" class="game-status">Press Start to Play!</h3>
+            </div>
+
+            <!-- Game Board -->
+            <div class="game-board mx-auto mb-4">
+                <div class="color-button" id="red" data-color="red"></div>
+                <div class="color-button" id="green" data-color="green"></div>
+                <div class="color-button" id="blue" data-color="blue"></div>
+                <div class="color-button" id="yellow" data-color="yellow"></div>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="text-center">
+                <button id="start-btn" class="btn btn-success btn-lg">Start Game</button>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions text-center mt-4">
+                <p class="mb-2"><strong>How to Play:</strong></p>
+                <p class="mb-1">• Watch the sequence of colors</p>
+                <p class="mb-1">• Click the colors in the same order</p>
+                <p class="mb-1">• Each round adds one more color</p>
+                <p class="mb-1">• PC/Laptop: Press Enter or click Start</p>
+                <p class="mb-1">• Mobile: Tap Start button</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
